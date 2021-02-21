@@ -1,0 +1,74 @@
+gaurav@anavi-laptop:~$ cd Documents
+gaurav@anavi-laptop:~/Documents$ ls
+AppImages  javascript
+gaurav@anavi-laptop:~/Documents$ mkdir anareact
+gaurav@anavi-laptop:~/Documents$ cd anareact
+gaurav@anavi-laptop:~/Documents/anareact$ git -v
+unknown option: -v
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+gaurav@anavi-laptop:~/Documents/anareact$ git --v
+unknown option: --v
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+gaurav@anavi-laptop:~/Documents/anareact$ git --version
+git version 2.17.1
+gaurav@anavi-laptop:~/Documents/anareact$ clear
+gaurav@anavi-laptop:~/Documents/anareact$ git clone https://github.com/dev-anamika252/mern2021.git
+Cloning into 'mern2021'...
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (5/5), done.
+gaurav@anavi-laptop:~/Documents/anareact$ ls
+mern2021
+gaurav@anavi-laptop:~/Documents/anareact$ ls
+mern2021
+gaurav@anavi-laptop:~/Documents/anareact$ cd mern2021
+gaurav@anavi-laptop:~/Documents/anareact/mern2021$ ls
+LICENSE  README.md
+gaurav@anavi-laptop:~/Documents/anareact/mern2021$ nano README.md
+gaurav@anavi-laptop:~/Documents/anareact/mern2021$ git add .
+gaurav@anavi-laptop:~/Documents/anareact/mern2021$ git commit -m "my first edit" 
+[main 7a5829a] my first edit
+ 1 file changed, 2 insertions(+)
+gaurav@anavi-laptop:~/Documents/anareact/mern2021$ git push
+Username for 'https://github.com': dev-anamika252
+Password for 'https://dev-anamika252@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 319 bytes | 319.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/dev-anamika252/mern2021.git
+   c9ba521..7a5829a  main -> main
+gaurav@anavi-laptop:~/Documents/anareact/mern2021$ l
+LICENSE  README.md
+gaurav@anavi-laptop:~/Documents/anareact/mern2021$ ls
+LICENSE  README.md
+gaurav@anavi-laptop:~/Documents/anareact/mern2021$ nano README.md
+gaurav@anavi-laptop:~/Documents/anareact/mern2021$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/dev-anamika252/mern2021
+   7a5829a..f28f06f  main       -> origin/main
+Updating 7a5829a..f28f06f
+Fast-forward
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+gaurav@anavi-laptop:~/Documents/anareact/mern2021$ nano README.md
+gaurav@anavi-laptop:~/Documents/anareact/mern2021$ ^C
+gaurav@anavi-laptop:~/Documents/anareact/mern2021$ ^C
+gaurav@anavi-laptop:~/Documents/anareact/mern2021$ 
+
